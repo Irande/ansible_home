@@ -1,0 +1,46 @@
+1. Download and install Git for Linux:
+>> yum install git
+
+2. Configuring GitHub
+>> git config --global user.name "<user name>"
+>> git config --global user.email "<email>"
+
+3. Creating a local repository
+>> git init <repo name>
+>> cd <repo dir>
+
+4. Adding repository files to an index
+>> git add <file name>
+To remove the file from staging area 
+>> git rm --cache <file name>
+>> git status
+5. Committing changes made to the index
+>> git commit -m "message"
+>> git log
+>> git show
+
+6. Creating a repository on GitHub
+go to git hub website, login to your account and create a repository
+
+7. Connect to the repository on GitHub
+>> git remote add origin <link to the remote repo>
+
+8. Push your commit to remote repo
+>> git push origin master
+>> username
+>> access token
+    > go to your github account
+	> click on settings
+	> developer setting 
+	> personal access token
+	> create the token 
+	> copy it and paste in place of password on your console
+	
+	
+	
+	
+	
+glpat-JqusEu4T1LiEhVwAgZgF
+git@gitlab.com:ansible-automation-platform/ansible-new.git
+
+
