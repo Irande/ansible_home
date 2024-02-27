@@ -1,0 +1,17 @@
+---
+- name: set up motd
+  hosts: managedhosts
+  gather_facts: true
+  vars:
+    - system_owner: jonah.irande@bludive.net
+  tasks:
+    - name: get system facts
+      ansible.builtin.debug:
+        var: ansible_facts
+
+    - name: set up message of the day
+      ansible.builtin.template:
+        src: motd.j2
+        dest: /etc/motd
+        owner: root
+        mode: 0644

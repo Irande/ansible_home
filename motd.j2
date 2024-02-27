@@ -1,0 +1,5 @@
+This is system: "{{ ansible_facts['hostname'] }}" / {{ ansible_facts['fqdn'] }}
+with IP address: {{ ansible_facts['default_ipv4']['address'] }}
+The OS running on this system is {{ ansible_facts['distribution'] }}
+The kernel is {{ ansible_facts['kernel'] }}
+Please report issues to {{ system_owner }}
