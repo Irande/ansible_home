@@ -1,0 +1,16 @@
+[aix]
+192.168.0.20
+
+[controller]
+192.168.6.13
+
+[hub]
+192.168.6.14
+
+[linux]
+192.168.5.36
+192.168.5.37
+
+[managedhosts:children]
+aix
+linux
