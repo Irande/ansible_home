@@ -1,0 +1,21 @@
+---
+- name: user creation
+  hosts: 192.168.6.70
+  tasks:
+    - name: setup a devops group
+      group:
+        name: devops
+        gid: 1100
+
+    - name: set up db users
+      user:
+        name: devops_user
+        password: passw0rd
+        uid: 3000
+        group: devops
+
+
+    - name: install httpd
+      dnf:
+        name: httpd
+        state: present
