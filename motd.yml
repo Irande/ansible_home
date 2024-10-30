@@ -1,6 +1,6 @@
 ---
 - name: set up motd
-  hosts: managedhosts
+  hosts: 192.168.6.16
   gather_facts: true
   vars:
     - system_owner: jonah.irande@bludive.net
